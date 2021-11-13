@@ -1,0 +1,48 @@
+{
+  "name": "vue-demo-pwa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server dist-production",
+    "serve": "vue-cli-service serve",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:liantiao": "vue-cli-service build --mode liantiao",
+    "build:preprod": "vue-cli-service build --mode preprod",
+    "build": "vue-cli-service build",
+    "buildall": "vue-cli-service build --mode liantiao & vue-cli-service build --mode preprod & vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "workbox-webpack-plugin": "^6.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
